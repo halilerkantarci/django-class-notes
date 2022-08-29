@@ -1,2 +1,20 @@
+{% load static %}
+<head>
+  <link rel="stylesheet" href="{% static 'fsApp/index.css' %}" />
+</head>
+
 <h1>Bu sayfa fsApp</h1>
-{{ request.META }}
+{{ caption }}
+<br />
+
+{{ caption | title }}
+<br />
+{{ caption | upper }}
+<br />
+<ul>
+  {% for i in my_list %}
+  <li>{{ i }}</li>
+  {% endfor %}
+</ul>
+
+<img src="{% static 'fsApp/CLARUSWAY_LOGO.png' %}" width="300" alt="Example" />
