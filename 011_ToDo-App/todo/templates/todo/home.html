@@ -8,13 +8,30 @@
     </form>
   </div>
   <div>
-    <ul>
-      {% for todo in todos %}
-
-      <li><a href="{% url "update" todo.id %}"> {{todo}}</a></li>
-
-      {% endfor %}
-    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Title</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for todo in todos %}
+        <tr>
+          <td>{{forloop.counter}}</td>
+          <td>{{todo.title}}</td>
+          <td>
+            <button><a href="{% url 'update' todo.id %}">Update </a></button>
+          </td>
+          <td>
+            <button><a href="{% url 'update' todo.id %}">Delete </a></button>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
   </div>
 </div>
 {% endblock content %}
