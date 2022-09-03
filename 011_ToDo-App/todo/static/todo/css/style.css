@@ -7,3 +7,14 @@
   justify-content: space-around;
   align-items: center;
 }
+body {
+  background-image: url("https://pixabay.com/tr/photos/do%c4%9fa-vadi-k%c3%b6y-manzara-a%c4%9fa%c3%a7lar-7421337/");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+textarea {
+  max-width: 100%;
+}
+.a {
+  background-color: red;
+}

@@ -13,11 +13,11 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="{% static "todo/css/style.css" %}" />
+    <link rel="stylesheet" href="{% static 'todo/css/style.css' %}" />
     <title>Document</title>
   </head>
 
-  <body>
+  <body class="a">
     <!-- navabar start -->
     <nav class="navbar navbar-expand-lg navbar navbar-white">
       <div class="container-fluid">
@@ -32,6 +32,7 @@
         >
       </div>
     </nav>
+
     {% block content %} {% endblock content %}
     <!-- JavaScript Bundle with Popper -->
     <script
