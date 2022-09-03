@@ -1,0 +1,9 @@
+.navbar {
+  background-color: cadetblue;
+  margin-bottom: 10px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
