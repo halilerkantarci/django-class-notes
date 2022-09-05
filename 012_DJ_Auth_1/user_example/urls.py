@@ -4,6 +4,7 @@ from .views import (
     special,
     register
 )
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('', home, name="home"),
